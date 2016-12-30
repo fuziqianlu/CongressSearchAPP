@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/tool_bar_bill"
+        layout="@layout/my_tool_bar"
+        ></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageSwitcher
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/favorite_button" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/bill_id"
+                    android:layout_weight="0"
+                    android:id="@+id/textView8"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"
+                    android:layout_width="wrap_content"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_id_data"
+                    android:textSize="@dimen/detail_data"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/title"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_title_data"
+                    android:textSize="@dimen/detail_data"
+                    android:layout_width="100dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/bill_type"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_chamber"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_type_data"
+                    android:textSize="@dimen/detail_data" />
+            </TableRow>
+
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/sponsor"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_contact"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_sponsor_data"
+                    android:textSize="@dimen/detail_data" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/chamber"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_startTerm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_chamber_data"
+                    android:textSize="@dimen/detail_data" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/status"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_endTerm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/biil_status_data"
+                    android:textSize="@dimen/detail_data" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/introduced_on"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_termProgress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/biil_introduce_data"
+                    android:textSize="@dimen/detail_data" />
+
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/congress_url"
+                    android:layout_weight="0"
+                    android:id="@+id/bill_congress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/bill_congress_data"
+                    android:textSize="@dimen/detail_data"
+                    android:layout_width="100dp"/>
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/version"
+                    android:layout_weight="0"
+                    android:id="@+id/bill_version"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"/>
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/biil_version_data"
+                    android:textSize="@dimen/detail_data" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/paddingSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/bill_url"
+                    android:layout_weight="0"
+                    android:id="@+id/bill_url"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/detail_header"
+                    />
+
+                <TextView
+                    android:text="@string/nothing"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/graytext"
+                    android:id="@+id/biil_url_data"
+                    android:textSize="@dimen/detail_data"
+                    android:layout_width="100dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
